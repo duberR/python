@@ -215,7 +215,9 @@ def main():
 if __name__ == '__main__':
     main()"""
 
-
+lista=["a", "b", "c", "d", "e", "f", "g", "h"]
+for indice in range( len(lista) ):
+    print("indice:",indice, "valor:", lista[indice])
 
 
 

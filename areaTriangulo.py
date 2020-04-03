@@ -54,3 +54,14 @@ Ingles=float(input("ingrese su nota de Ingles:\n"))
 promedio= (Español + Matematicas + Economia + Programacion + Ingles)/5
 print("tu promedio es",promedio)"""
 
+from datetime import  date
+
+def cantidad_meses(fecha_nacimiento):
+    fecha_actual= date.today()
+    resultado=fecha_actual.year - fecha_nacimiento.year
+    meses = resultado * 12
+    return meses
+fecha_nacimiento=date(1990,2,25)
+edad = cantidad_meses(fecha_nacimiento)
+print("la fecha de nacimiento es de :", edad, "meses")
+
