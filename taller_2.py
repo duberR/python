@@ -18,18 +18,13 @@ while resp == "si":
             print("Se ingresaron", menor )
             print("numero menores a 0" , igual)
             print("numeros iguales a 0 y ",  mayor )"""
-import current as current
 
-"""cantidades=0
-suma = 0
-numCantidades = 0
-while numCantidades <=10:
- cantidades= input("ingrese la cantidad\n")
- numCantidades+=1
- if numCantidades==10:
-     for i in  cantidades: #numCantidades+=1
-         suma = cantidades+cantidades
-     print("la suma total de las cantiades es de :",suma)"""
+
+suma=0
+for i in range(0,10):
+    numero= int(input("ingrese un numero\n"))
+    suma= suma+numero
+print("la suma de los numeros es :",suma)
 
 
 
