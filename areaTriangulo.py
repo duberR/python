@@ -55,13 +55,12 @@ promedio= (Español + Matematicas + Economia + Programacion + Ingles)/5
 print("tu promedio es",promedio)"""
 
 from datetime import  date
+año=int(input("Ingrese su Año de nacimiento\n"))
+mes=int(input("ingrese su mes de nacimiento\n"))
+dia= int(input("Ingrese su dia de nacimiento\n"))
+fechaNacimiento=date(año,mes,dia)
+hoy= date.today()
+meses=(hoy.year-año)*12+(hoy.month - mes)
+print("la cantida de meses trascurrida desde su nacimiento son:\n", meses)
 
-def cantidad_meses(fecha_nacimiento):
-    fecha_actual= date.today()
-    resultado=fecha_actual.year - fecha_nacimiento.year
-    meses = resultado * 12
-    return meses
-fecha_nacimiento=date(1990,2,25)
-edad = cantidad_meses(fecha_nacimiento)
-print("la fecha de nacimiento es de :", edad, "meses")
 

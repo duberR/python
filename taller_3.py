@@ -70,7 +70,7 @@ for palabrita in lista:
 
 
 """mensaje =Te alegrarás al saber que ningún desastre ha acompañado alinicio de una empresa que 
-ha considerado con talmalos presentimientos.Llegué aquí ayer, y mi primera tarea 
+ha considerado con talmalos timientos.Llegué aquí ayer, y mi primera tarea 
 para asegurarle a mi querida hermana mi bienestar y 
 aumentar la confianza en El exito de mi empresa y el exito
 Ya estoy muy al norte de Londres, y mientras camino por las calles dePetersburgh, siento que una brisa fría del norte juega en mis mejillas,
@@ -215,9 +215,22 @@ def main():
 if __name__ == '__main__':
     main()"""
 
-lista=["a", "b", "c", "d", "e", "f", "g", "h"]
+"""lista=["a", "b", "c", "d", "e", "f", "g", "h"]
 for indice in range( len(lista) ):
-    print("indice:",indice, "valor:", lista[indice])
+    print("indice:",indice, "valor:", lista[indice])"""
+
+numpar=0
+numImpar=0
+num=0
+for num in range(0,101,1):
+    if(num%2==0):
+        numpar=numpar+num
+    else:
+        numImpar=numImpar+num
+multiplicacion=numpar*numImpar
+print("la multiplicacion de los numeros es:", multiplicacion)
+print("los numers son:",numpar)
+print("los numeros impares son:",numImpar)
 
 
 
